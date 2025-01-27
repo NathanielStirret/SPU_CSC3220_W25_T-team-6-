@@ -12,4 +12,5 @@ The **Personal Expense Tracker** is an offline desktop application designed to h
     5. Goal Target date
     6. Priority level (e.g., low, medium, high)
     7. Steps/milestones to acheive goal
-2. Retrieve goal information, including: 
+2. Retrieve goal information, including: Start Date, Target Date, Goal category, Goal Description, Goal title, Steps.
+3. Display Stated infomration in a cohesive way.
