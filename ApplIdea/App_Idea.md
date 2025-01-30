@@ -6,9 +6,9 @@ The **Personal Expense Tracker** is an offline desktop application designed to h
 ## Functionality
 
 Three top-level functions: 
-    1) Build and manage goals (creating, editing, deleting, cusotmizing goals)
-    2) Manage/track performance on goals (checking off steps completed). 
-    3) Calculate and report actual progress vs original goal.
+    1. Build and manage goals (creating, editing, deleting, cusotmizing goals)
+    2. Manage/track performance on goals (checking off steps completed). 
+    3. Calculate and report actual progress vs original goal.
 
 
 ### Build and Manage Goals
