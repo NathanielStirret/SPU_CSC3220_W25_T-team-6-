@@ -15,9 +15,9 @@ Three top-level functions:
 1. Create new goals with the following optional information:
     1. Goal title
     2. Goal description
-    3. Goal category
+    3. Goal category (e.g. fitness, financial, hobby skill)
     4. Start date
-    5. Goal Target date (e.g. fitness, financial, hobby skill)
+    5. Goal Target date 
     6. Priority level (e.g., low, medium, high)
     7. Steps/milestones to acheive goal
 
