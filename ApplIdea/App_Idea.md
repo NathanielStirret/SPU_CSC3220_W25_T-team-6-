@@ -22,8 +22,8 @@ Three top-level functions:
     7. Steps/milestones to acheive goal
 
 ### Manage/Track Performance
-Retrieve goal information, including: Start Date, Target Date, Goal category, Goal Description, Goal title, Steps.
+Retrieve goal information, including: Start Date, Target Date, Goal Category, Goal Description, Goal Title, Steps.
 Compare to original goal information.
 
 ### Report Goal Progress
-Display Stated infomration in a cohesive way.
+Display stated infomration in a cohesive way.
