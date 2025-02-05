@@ -1,7 +1,7 @@
 # Application Idea: Personal Goals Tracker
 
 ## Application Description
-The **Personal Expense Tracker** is an offline desktop application designed to help individuals manage their goals. The application enables users to track their goal timelines, categorize goals and keep track of steps to be accomplished. 
+The **Personal Goal Tracker** is an offline desktop application designed to help individuals manage their goals. The application enables users to track their goal timelines, categorize goals and keep track of steps to be accomplished. 
 
 ## Functionality
 
