@@ -1,17 +1,43 @@
-INSERT INTO Goal 
-(GoalId, Name, Description)
-VALUES
-('001', 'Marathon', 'Run')
+SELECT 
+    Goal.GoalId, 
+    Goal.Description AS GoalDescription, 
+    Step.StepId, 
+    Step.StepName 
+FROM Goal
+JOIN ForeignKeys ON Goal.GoalId = ForeignKeys.GoalId
+JOIN Step ON ForeignKeys.StepId = Step.StepId
+WHERE Goal.GoalId = 1;
 
-SELECT * from Goal
 
+BEGIN TRANSACTION;
 UPDATE Goal
-set Description = 'run 24 miles'
+SET PercentageCompleted = 50, 
+    LastStepCompleted = 2
+WHERE GoalId = 1;
+UPDATE Step
+SET StepFullyCompleted = 1
+WHERE StepId IN (1, 2);
+COMMIT TRANSACTION;
 
-select Description from Goal
 
-DELETE FROM Goal
-    WHERE GoalId=001;
-    
-    
+BEGIN TRANSACTION;
+INSERT INTO Goal (GoalId, Description, PercentageCompleted, PriotityLevel, LastStepCompleted, StartDate, TargetDate, TotalSteps) 
+VALUES (2, 'Build a desk', 0, 2, 0, '2025-02-17', '2025-04-01', 2);
 
+INSERT INTO Step (StepId, StepName, StepFullyCompleted) 
+VALUES (3, 'Cut the wood', 0), 
+       (4, 'Sand the wood', 0);
+
+INSERT INTO ForeignKeys (ForeignKeyId, GoalId, StepId, TypeofGoalId)
+VALUES (1, 2, 3, NULL), 
+       (2, 2, 4, NULL);
+
+COMMIT TRANSACTION;
+
+
+
+BEGIN TRANSACTION;
+DELETE FROM ForeignKeys WHERE GoalId = 1;
+DELETE FROM Step WHERE StepId IN (SELECT StepId FROM ForeignKeys WHERE GoalId = 1);
+DELETE FROM Goal WHERE GoalId = 1;
+COMMIT TRANSACTION;
