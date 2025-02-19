@@ -1,0 +1,17 @@
+INSERT INTO Goal 
+(GoalId, Name, Description)
+VALUES
+('001', 'Marathon', 'Run')
+
+SELECT * from Goal
+
+UPDATE Goal
+set Description = 'run 24 miles'
+
+select Description from Goal
+
+DELETE FROM Goal
+    WHERE GoalId=001;
+    
+    
+
