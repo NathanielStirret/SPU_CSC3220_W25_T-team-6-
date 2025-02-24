@@ -16,3 +16,5 @@ Helped make the data base.
 Double checked it
 
 Helped organze the git upload
+
+honestly i forgot what i have and havent done but i made the color pallet
