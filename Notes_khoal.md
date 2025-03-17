@@ -6,6 +6,8 @@ Draft application idea and presention, I expanded upon the idea and polishing th
 
 Did the presentation for the ERD and helped explaining the relationships of the entities
 
+Helped design the diagram 
+
 Made the whole persona as well as moodboard besides color palette
 
 Helped making database 
